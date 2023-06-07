@@ -1,0 +1,97 @@
+ /*--------MAIN PRODUCTOS---------*/
+ .main-productos {
+    padding: 50px 5px 5px 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    display: flex;
+    background: linear-gradient(  rgba(255, 255, 255, 0.766)
+  ,#792cdec5, 80% , #de6d2c93 );
+   h1{
+    font-size: 35px;
+    font-family: fantasy;
+    color: #7A2CDE;
+  }
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 5px;
+    border: 5px solid #F6C931;
+    width: 90%;
+    height: 90%;
+    list-style: none;
+  }
+   img {
+    width: 90%;
+    height: 30%;
+  }
+  .div1 {
+    grid-area: 1 / 1/ 2 / 2;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large
+  }
+  .div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+  }
+  .div3 {
+    grid-area: 1 / 3 / 2 / 4;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+  }
+  .div4 {
+    grid-area: 1 / 4 / 2 / 5;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+  }
+  .div5 {
+    grid-area: 2 / 1 / 3 / 2;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+  }
+  .div6 {
+    grid-area: 2 / 2 / 3 / 3;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+  }
+  .div7 {
+    grid-area: 2 / 3 / 3 / 4;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+  }
+  .div8 {
+    grid-area: 2 / 4 / 3 / 5;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+  }
+  @media (max-width: 780px){
+    .parent{
+        width: 90%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        .img{
+            width: 100%;
+            height: 100%;
+          }
+          div img{
+            width: 300px;
+            height: 300px;
+            justify-content: center;
+          }
+    }
+  }
+  }
+  /*--------Fin de Main Productos------*/

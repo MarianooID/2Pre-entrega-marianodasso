@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+
+//---nav--//
+@import "navegacion";
+//--main inicio//
+@import "inicio";
+//---footer--//
+@import "footer";
+//---Main Productos---//
+@import "main-productos";
+//---Main Servicios--//
+@import "main-servicios";
+//---Main Contacto---//
+@import "main-contacto";
+//---Main Nosotros---//
+@import "main-nosotros";
+a:active {
+    text-decoration: none;
+    transition: .5s;
+  }

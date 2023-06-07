@@ -1,0 +1,27 @@
+/*-------Pie de Pagina------*/
+.bg-footer {
+    background-color: #081B33;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .type-white {
+        color: #F53D84;
+        margin: 20px;
+        width: 80%;
+        height: 80%;
+        font-size: medium;
+        font-family: cursive;
+      }
+      .redes{
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+       i{
+        color: #F53D84;
+        font-weight: 500;
+        font-size: 40px;
+        margin: 15px;
+      }
+    }
