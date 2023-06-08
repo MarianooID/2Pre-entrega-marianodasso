@@ -5,18 +5,22 @@
     align-items: center;
     flex-direction:column;
     display: flex;
-    background: linear-gradient(  rgba(255, 255, 255, 0.766)
+    background: linear-gradient(to bottom,  rgba(255, 255, 255, 0.766)
   ,#792cdec5, 80% , #de6d2c93 );
    h1{
     font-size: 35px;
     font-family: fantasy;
     color: #7A2CDE;
+    animation-name: aparecer;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
   }
   .parent {
+    padding: 1%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 50px;
+    grid-column-gap: 35px;
     grid-row-gap: 5px;
     border: 5px solid #F6C931;
     width: 90%;
@@ -26,6 +30,15 @@
    img {
     width: 90%;
     height: 30%;
+    border-style: groove;
+    border-radius: 30px;
+    display: flex;
+    margin: 0 0 0 20px;
+  }
+  .img1{
+    width: 100%;
+    height: 80%;
+    margin: 0%;
   }
   .div1 {
     grid-area: 1 / 1/ 2 / 2;
@@ -83,14 +96,17 @@
         flex-direction: column;
         list-style: none;
         .img{
-            width: 100%;
-            height: 100%;
+            width: 50%;
+            height: 50%;
           }
-          div img{
-            width: 300px;
-            height: 300px;
-            justify-content: center;
-          }
+    }
+  }
+  @keyframes aparecer{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
     }
   }
   }

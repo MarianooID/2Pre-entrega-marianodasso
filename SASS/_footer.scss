@@ -1,7 +1,7 @@
 /*-------Pie de Pagina------*/
 .bg-footer {
     background-color: #081B33;
-    padding: 15px;
+    padding: 0%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -24,4 +24,26 @@
         font-size: 40px;
         margin: 15px;
       }
+    }
+    @media (max-width: 768px){
+      .type-white{
+        font-size: x-small;
+      }
+        .redes{
+          margin: 0%;
+          padding: 0%;
+          width: 180px;
+          height: 180px;
+          flex-direction: row;
+        }
+        i{ font-weight: 50;
+          font-size: small;
+        }
+          a{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
     }

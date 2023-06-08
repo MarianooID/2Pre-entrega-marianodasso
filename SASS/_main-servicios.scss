@@ -38,14 +38,65 @@
       .tratamientos {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        justify-content: space-around;
+        flex-direction: row;
         list-style: none;
+        font-family: initial;
+        background-color: rgba(0, 0, 0, 0.733);
+        padding: 90px;
       }
       .img-servis {
         width: 320px;
         height: 320px;
         margin: 1%;
+      }
+      .li1{
+        animation-name: aparecer;
+        animation-duration: 3s;
+        animation-iteration-count: floor($number: 1);
+      }
+      .li2{
+        animation-name: aparecer;
+        animation-duration: 4s;
+        animation-iteration-count: floor($number: 1);}
+      .li3{
+        animation-name: aparecer;
+        animation-duration: 5s;
+        animation-iteration-count: floor($number: 1);}
+      .li4{
+        animation-name: aparecer;
+        animation-duration: 6s;
+        animation-iteration-count: floor($number: 1);}
+      .li5{
+        animation-name: aparecer;
+        animation-duration: 7s;
+        animation-iteration-count: floor($number: 1);}
+      .li6{
+        animation-name: aparecer;
+        animation-duration: 8s;
+        animation-iteration-count: floor($number: 1);}
+      @keyframes aparecer{
+        0%{
+          opacity: 0;
+        }
+        100%{
+          opacity: 3;
+        }
+      }
+      @media (max-width: 1180px){
+        .tratamientos {
+          flex-direction: column;}
+          p{
+            font-size: x-large;
+          }
+          .img-servis{
+            width: 200px;
+            height: 200px;
+          }
+          .img1{
+            width: 75%;
+            height: 70%;
+          }
       }
   }
   /*------Fin de Servicios----*/

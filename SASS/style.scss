@@ -14,7 +14,16 @@
 @import "main-contacto";
 //---Main Nosotros---//
 @import "main-nosotros";
-a:active {
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+a:active a:link, a:visited{
     text-decoration: none;
     transition: .5s;
   }
