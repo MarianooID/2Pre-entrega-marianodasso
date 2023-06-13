@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap"); /*---------LOGO Y MENU------------*/
 .df-header {
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
 }
 .df-header nav {
   display: flex;
@@ -40,7 +40,7 @@
   height: 90px;
   padding: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .df-header nav .menu {
     width: 100%;
     height: 0;
@@ -56,13 +56,26 @@
     align-items: center;
     padding: 0.5rem 0;
   }
+  .df-header .logo {
+    display: flex;
+    justify-content: left;
+    padding: 0%;
+    margin: 0%;
+  }
   .df-header nav label {
-    display: inline-flex;
+    display: inline-block;
     color: white;
     cursor: pointer;
+    justify-content: right;
+    margin: 0%;
   }
   .df-header nav #toggle:checked ~ .menu {
     height: 100%;
+    width: 100%;
+  }
+  .df-header i {
+    font-size: 50px;
+    font-weight: 500;
   }
   .df-header a {
     font-size: small;
@@ -73,41 +86,45 @@
 .main {
   width: 100%;
   height: 100%;
-  background: linear-gradient(#792CDE, 5%, white, rgba(222, 109, 44, 0.7137254902));
+  background: linear-gradient(#792CDE, 5%, rgb(255, 255, 255), rgba(234, 206, 81, 0.7098039216));
 }
 .main .img-main2 {
   width: 65%;
-  height: 30%;
+  height: 35%;
+  margin: 0 0 0 5%;
 }
 .main .titulos .img {
-  display: flex;
-  width: 100%;
-  height: 20%;
+  width: 90%;
+  height: 10%;
+  margin: 0 0 0 5%;
+  object-fit: fill;
 }
 .main .titulos h1 {
   font-family: fantasy;
   color: #F53D84;
   display: flex;
   justify-content: center;
-  padding: 2%;
+  padding: 3%;
   animation-name: aparecer;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-direction: reverse;
 }
 .main .titulos h2 {
   font-size: 30px;
-  font-family: cursive;
-  color: #F53D84;
+  font-family: initial;
+  color: white;
   display: flex;
   justify-content: center;
-  margin: 3%;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+  background-color: #F53D84;
 }
 .main p {
-  font-size: xx-large;
-  font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #F53D84;
+  font-size: x-large;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #f53d84;
   justify-content: center;
   padding: 5%;
 }
@@ -116,14 +133,19 @@
     opacity: 0;
   }
   100% {
-    opacity: 3;
+    opacity: 2;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .main .titulos h2 {
-    font-size: medium;
+    font-size: x-large;
   }
   .main p {
+    font-size: large;
+  }
+}
+@media (max-width: 720px) {
+  .main .titulos h2 {
     font-size: large;
   }
 }
@@ -155,10 +177,14 @@
   font-size: 40px;
   margin: 15px;
 }
+.bg-footer i:hover {
+  font-size: 30px;
+}
 
 @media (max-width: 768px) {
   .type-white {
     font-size: x-small;
+    align-items: center;
   }
   .redes {
     margin: 0%;
@@ -186,7 +212,7 @@
   align-items: center;
   flex-direction: column;
   display: flex;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.766), rgba(121, 44, 222, 0.7725490196), 80%, rgba(222, 109, 44, 0.5764705882));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.766), rgba(121, 44, 222, 0.7725490196), 45%, #F6C931);
 }
 .main-productos h1 {
   font-size: 35px;
@@ -196,23 +222,39 @@
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
+.main-productos h2 {
+  color: #F6C931;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 25px;
+}
 .main-productos .parent {
+  width: 85%;
+  height: 85%;
   padding: 1%;
   display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 35px;
   grid-row-gap: 5px;
-  border: 5px solid #F6C931;
-  width: 90%;
-  height: 90%;
+  border: 10px inset #F6C931;
   list-style: none;
+  color: white;
 }
 .main-productos img {
-  width: 90%;
-  height: 30%;
-  border-style: groove;
-  border-radius: 30px;
+  width: 100%;
+  height: 50%;
+  border: 5px double white;
+  border-radius: 10px;
   display: flex;
   margin: 0 0 0 20px;
 }
@@ -220,6 +262,8 @@
   width: 100%;
   height: 80%;
   margin: 0%;
+  border: none;
+  border-radius: 25px;
 }
 .main-productos .div1 {
   grid-area: 1/1/2/2;
@@ -229,7 +273,6 @@
 }
 .main-productos .div2 {
   grid-area: 1/2/2/3;
-  align-items: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: x-large;
 }
@@ -276,10 +319,24 @@
     display: flex;
     flex-direction: column;
     list-style: none;
+    grid-row-gap: 55px;
   }
   .main-productos .parent .img {
-    width: 50%;
+    width: 40%;
     height: 50%;
+    margin-left: 25%;
+  }
+  .main-productos .parent h2 {
+    font-size: x-large;
+  }
+  .main-productos .parent p {
+    font-size: large;
+    color: black;
+    align-items: baseline;
+  }
+  .main-productos .parent li {
+    font-size: large;
+    color: black;
   }
 }
 @keyframes aparecer {
@@ -299,14 +356,9 @@
   font-size: xx-large;
   background: linear-gradient(rgba(255, 255, 255, 0.382), rgba(121, 44, 222, 0.7215686275), 90%, rgba(222, 109, 44, 0.5764705882));
 }
-.main-servicios img {
-  padding: 1%;
-  height: 60%;
-  width: 50%;
-}
 .main-servicios .img1 {
-  width: 35%;
-  height: 70%;
+  width: 45%;
+  height: 65%;
 }
 .main-servicios h1 {
   display: flex;
@@ -343,6 +395,12 @@
   width: 320px;
   height: 320px;
   margin: 1%;
+  border: 15px solid white;
+  border-radius: 10px;
+}
+.main-servicios .img-servis:hover {
+  width: 420px;
+  height: 420px;
 }
 .main-servicios .li1 {
   animation-name: aparecer;
@@ -390,12 +448,24 @@
     font-size: x-large;
   }
   .main-servicios .img-servis {
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+  }
+  .main-servicios .img-servis:hover {
+    width: 320px;
+    height: 320px;
   }
   .main-servicios .img1 {
-    width: 75%;
+    width: 70%;
     height: 70%;
+  }
+}
+@media (max-width: 960px) {
+  .main-servicios .img2 {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -476,8 +546,8 @@
 }
 /*----Fin de nosotros----*/
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 auto;
   list-style: none;
   box-sizing: border-box;
   user-select: none;

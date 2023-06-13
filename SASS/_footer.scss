@@ -24,10 +24,14 @@
         font-size: 40px;
         margin: 15px;
       }
+      i:hover{
+        font-size: 30px;
+      }
     }
     @media (max-width: 768px){
       .type-white{
         font-size: x-small;
+        align-items: center;
       }
         .redes{
           margin: 0%;
