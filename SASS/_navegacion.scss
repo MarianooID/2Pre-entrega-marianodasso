@@ -1,13 +1,13 @@
 /*---------LOGO Y MENU------------*/
 .df-header{
     width: 100%;
-    margin:  auto;
+    height: 125px;
     nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        background-color: #081B33;
+        background-color: #228FA8;
         border-radius: 0.4rem;
         padding-right: 60px;
         font-style: none;
@@ -26,10 +26,16 @@
         font-weight: 900;
       }
      a {
+      padding: 4px;
         text-decoration: none;
-        color: #F53D84;
-        font-size: large;
-        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: medium;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      a:hover{
+        background-color: #f53d84a6;
+        border: 3px solid;
+        border-radius: 5px;
       }
       nav #toggle, nav label {
         display: none;
@@ -37,7 +43,8 @@
       .logo1 {
         width: 90px;
         height: 90px;
-        padding: 10px;
+        padding: 7%;
+        background-color: rgba(0, 0, 0, 0.779);
       }
       @media (max-width: 1100px){
         nav .menu{

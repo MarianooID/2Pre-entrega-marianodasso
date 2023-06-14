@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap"); /*---------LOGO Y MENU------------*/
 .df-header {
   width: 100%;
-  margin: auto;
+  height: 125px;
 }
 .df-header nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #081B33;
+  background-color: #228FA8;
   border-radius: 0.4rem;
   padding-right: 60px;
   font-style: none;
@@ -27,10 +27,16 @@
   font-weight: 900;
 }
 .df-header a {
+  padding: 4px;
   text-decoration: none;
-  color: #F53D84;
-  font-size: large;
-  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: medium;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.df-header a:hover {
+  background-color: rgba(245, 61, 132, 0.6509803922);
+  border: 3px solid;
+  border-radius: 5px;
 }
 .df-header nav #toggle, .df-header nav label {
   display: none;
@@ -38,7 +44,8 @@
 .df-header .logo1 {
   width: 90px;
   height: 90px;
-  padding: 10px;
+  padding: 7%;
+  background-color: rgba(0, 0, 0, 0.779);
 }
 @media (max-width: 1100px) {
   .df-header nav .menu {
@@ -86,7 +93,7 @@
 .main {
   width: 100%;
   height: 100%;
-  background: linear-gradient(#792CDE, 5%, rgb(255, 255, 255), rgba(234, 206, 81, 0.7098039216));
+  background: linear-gradient(#792CDE, 5%, #F5E656, #25CEF5);
 }
 .main .img-main2 {
   width: 65%;
@@ -110,23 +117,25 @@
   animation-iteration-count: infinite;
 }
 .main .titulos h2 {
-  font-size: 30px;
+  font-size: xx-large;
   font-family: initial;
-  color: white;
+  color: #F5E656;
   display: flex;
   justify-content: center;
   animation-name: aparecer;
   animation-duration: 2s;
   animation-iteration-count: 3;
-  background-color: #F53D84;
+  background-color: #DE2CC9;
+  padding: 30px;
 }
 .main p {
-  font-size: x-large;
+  font-size: xx-large;
   font-weight: 600;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #f53d84;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
   justify-content: center;
   padding: 5%;
+  width: 70%;
 }
 @keyframes aparecer {
   0% {
@@ -152,18 +161,20 @@
 
 /*-------Pie de Pagina------*/
 .bg-footer {
-  background-color: #081B33;
+  background-color: #228FA8;
   padding: 0%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .bg-footer .type-white {
-  color: #F53D84;
+  align-items: center;
+  color: white;
   margin: 20px;
   width: 80%;
   height: 80%;
-  font-size: medium;
+  font-size: large;
+  font-style: inherit;
   font-family: cursive;
 }
 .bg-footer .redes {
@@ -172,13 +183,12 @@
   padding: 5px;
 }
 .bg-footer i {
-  color: #F53D84;
-  font-weight: 500;
-  font-size: 40px;
+  color: white;
+  font-size: 45px;
   margin: 15px;
 }
 .bg-footer i:hover {
-  font-size: 30px;
+  font-size: 55px;
 }
 
 @media (max-width: 768px) {
@@ -378,8 +388,9 @@
 .main-servicios p {
   font-size: xx-large;
   font-weight: 500;
-  font-style: oblique;
   margin: 5%;
+  color: white;
+  width: 60%;
 }
 .main-servicios .tratamientos {
   display: flex;
@@ -473,13 +484,16 @@
 /*---------Contacto---------*/
 .maincontacto {
   background: linear-gradient(rgba(246, 200, 49, 0.7960784314), 30%, rgba(121, 44, 222, 0.7294117647), #F53D84);
+  width: 100%;
+  height: 100%;
+  padding: 5%;
 }
 .maincontacto .mi-contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 90%;
-  height: 90%;
+  height: 100%;
   margin: 0px 5px 0px 60px;
   border-style: groove;
   border-radius: 40px;
@@ -490,6 +504,10 @@
   color: #792CDE;
   font-style: oblique;
 }
+.maincontacto label {
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .maincontacto .buttons {
   margin: 2%;
 }
@@ -499,6 +517,9 @@
   padding: 8px;
   color: #792CDE;
   background-color: #090909;
+}
+.maincontacto .buttons :hover {
+  background-color: white;
 }
 @media (max-width: 768px) {
   .maincontacto .mi-contacto {

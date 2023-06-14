@@ -1,16 +1,18 @@
 /*-------Pie de Pagina------*/
 .bg-footer {
-    background-color: #081B33;
+    background-color: #228FA8;
     padding: 0%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     .type-white {
-        color: #F53D84;
+      align-items: center;
+        color: white;
         margin: 20px;
         width: 80%;
         height: 80%;
-        font-size: medium;
+        font-size: large;
+        font-style: inherit;
         font-family: cursive;
       }
       .redes{
@@ -19,13 +21,12 @@
         padding: 5px;
       }
        i{
-        color: #F53D84;
-        font-weight: 500;
-        font-size: 40px;
+        color: white;
+        font-size: 45px;
         margin: 15px;
       }
       i:hover{
-        font-size: 30px;
+        font-size: 55px;
       }
     }
     @media (max-width: 768px){

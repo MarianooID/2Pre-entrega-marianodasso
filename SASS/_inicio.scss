@@ -2,13 +2,12 @@
 .main {
     width: 100%;
     height: 100%;
-    background: linear-gradient( #792CDE, 5%, rgb(255, 255, 255)
-    , #eace51b5);
+    background: linear-gradient( #792CDE, 5%, #F5E656
+    , #25CEF5);
     .img-main2{
         width: 65%;
         height: 35%;
         margin: 0 0 0 5%;
-
       }
       .titulos .img{
         width: 90%;
@@ -27,23 +26,25 @@
         animation-iteration-count: infinite;
       }
       .titulos h2{
-        font-size: 30px;
+        font-size: xx-large;
         font-family: initial;
-        color:  white;
+        color:  #F5E656;
         display: flex;
         justify-content: center;
         animation-name: aparecer;
         animation-duration: 2s;
         animation-iteration-count: floor($number: 3 );
-        background-color: #F53D84;
+        background-color: #DE2CC9;
+        padding: 30px;
       }
       p{
-        font-size: x-large;
+        font-size: xx-large;
         font-weight: 600;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: #f53d84;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
         justify-content: center;
         padding: 5%;
+        width: 70%;
       }
       @keyframes aparecer{
         0%{
