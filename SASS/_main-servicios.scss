@@ -1,115 +1,149 @@
 /*-------MAIN SERVICIOS-----*/
 .main-servicios {
-    color: #F53D84;
-    font-weight: 500;
-    font-size: xx-large;
-    background: linear-gradient(  rgba(255, 255, 255, 0.382)
-    ,#792cdeb8, 90% , #de6d2c93 );
-      .img1{
-        width: 45%;
-        height: 65%;
-      }
-      h1{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font: 400;
-        font-family: fantasy;
-        padding: 3%;
-      }
-      h2 {
-        padding: 20px;
-        display: flex;
-        align-items:center;
-        justify-content: center;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      p{
-        font-size: xx-large;
-        font-weight: 500;
-        margin: 5%;
-        color: white;
-        width: 60%;
-      }
-      .tratamientos {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: row;
-        list-style: none;
-        font-family: initial;
-        background-color: rgba(0, 0, 0, 0.733);
-        padding: 90px;
-      }
-      .img-servis {
-        width: 320px;
-        height: 320px;
-        margin: 1%;
-        border: 15px solid white;
-        border-radius: 10px;
-      }
-      .img-servis:hover {
-        width: 420px;
-        height: 420px;
-      }
-      .li1{
-        animation-name: aparecer;
-        animation-duration: 3s;
-        animation-iteration-count: floor($number: 1);
-      }
-      .li2{
-        animation-name: aparecer;
-        animation-duration: 4s;
-        animation-iteration-count: floor($number: 1);}
-      .li3{
-        animation-name: aparecer;
-        animation-duration: 5s;
-        animation-iteration-count: floor($number: 1);}
-      .li4{
-        animation-name: aparecer;
-        animation-duration: 6s;
-        animation-iteration-count: floor($number: 1);}
-      .li5{
-        animation-name: aparecer;
-        animation-duration: 7s;
-        animation-iteration-count: floor($number: 1);}
-      .li6{
-        animation-name: aparecer;
-        animation-duration: 8s;
-        animation-iteration-count: floor($number: 1);}
-      @keyframes aparecer{
-        0%{
-          opacity: 0;
-        }
-        100%{
-          opacity: 3;
-        }
-      }
-      @media (max-width: 1180px){
-        .tratamientos {
-          flex-direction: column;}
-          p{
-            font-size: x-large;
-          }
-          .img-servis{
-            width: 230px;
-            height: 230px;
-            display: flex;
-            justify-content: center;
-          }
-          .img-servis:hover {
-            width: 320px;
-            height: 320px;
-          }
-          .img1{
-            width: 70%;
-            height: 70%;
-          }
-      }
-      @media (max-width: 960px){
-        .img2{
-          width: 100%;
-          height: 100%;}
-      }
+  color: #F53D84;
+  font-weight: 500;
+  font-size: xx-large;
+  background: linear-gradient(rgba(255, 255, 255, 0.382), #792cdeb8, 90%, #de6d2c93);
+
+  .img1 {
+    width: 45%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  /*------Fin de Servicios----*/
+
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-family: fantasy;
+    padding: 3%;
+  }
+
+  h2 {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  p {
+    font-size: xx-large;
+    font-weight: 500;
+    margin: 5%;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .tratamientos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style: none;
+    font-family: initial;
+    background-color: rgba(0, 0, 0, 0.733);
+    padding: 90px;
+  }
+
+  .img-servis {
+    width: 320px;
+    height: 320px;
+    margin: 1%;
+    border: 15px solid #ffffff;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .img-servis:hover {
+    transform: scale(1.5);
+  }
+
+  .li1 {
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-iteration-count: floor($number: 1);
+  }
+
+  .li2 {
+    animation-name: aparecer;
+    animation-duration: 4s;
+    animation-iteration-count: floor($number: 1);
+  }
+
+  .li3 {
+    animation-name: aparecer;
+    animation-duration: 5s;
+    animation-iteration-count: floor($number: 1);
+  }
+
+  .li4 {
+    animation-name: aparecer;
+    animation-duration: 6s;
+    animation-iteration-count: floor($number: 1);
+  }
+
+  .li5 {
+    animation-name: aparecer;
+    animation-duration: 7s;
+    animation-iteration-count: floor($number: 1);
+  }
+
+  .li6 {
+    animation-name: aparecer;
+    animation-duration: 8s;
+    animation-iteration-count: floor($number: 1);
+  }
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 3;
+    }
+  }
+
+  @media (max-width: 1180px) {
+    .tratamientos {
+      flex-direction: column;
+    }
+
+    p {
+      font-size: x-large;
+    }
+
+    .img-servis {
+      width: 230px;
+      height: 230px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .img1 {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .img2 {
+      width: 100%;
+      height: 100%;
+    }
+
+    .img-servis {
+      transition: transform 0.3s;
+    }
+
+    .img-servis:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+/*------Fin de Servicios----*/

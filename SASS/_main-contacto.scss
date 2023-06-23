@@ -1,53 +1,74 @@
  /*---------Contacto---------*/
- .maincontacto{
-    background: linear-gradient( #f6c831cb, 30% ,#792cdeba , #F53D84 );
-    width: 100%;
-    height: 100%;
-    padding: 5%;
+ .maincontacto {
+   background: linear-gradient(#f6c831cb, 30%, #792cdeba, #F53D84);
+   width: 100%;
+   height: 100%;
+   padding: 5%;
 
-    .mi-contacto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-        height: 100%;
-        margin: 0px 5px 0px 60px;
-        border-style: groove;
-        border-radius: 40px;
-        border-width: 7px;
-      }
-      h1 {
-        padding: 3%;
-        color: #792CDE;
-        font-style: oblique;
-      }
-      label{
-        font-size: x-large;
-      font-family: Arial, Helvetica, sans-serif;
-      }
-      .buttons{
-        margin: 2%;
-      }
-      button{
-        display: inline;
-        align-items: center;
-        padding: 8px;
-        color: #792CDE;
-        background-color: #090909;
-      }
-      .buttons :hover {
-        background-color: white;
-      }
-      @media (max-width: 768px){
-        .mi-contacto{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin: 0%;
-        }
-        textarea{
-          height: 40%;
-          width: 40%;
-        }
-      }
-}
+   .mi-contacto {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 90%;
+     height: 100%;
+     margin: 0px 5px 0px 60px;
+     border-style: groove;
+     border-radius: 40px;
+     border-width: 7px;
+   }
+
+   h1 {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 3%;
+     color: #792CDE;
+     font-style: oblique;
+   }
+
+   label {
+     font-size: x-large;
+     font-family: Arial, Helvetica, sans-serif;
+   }
+
+   .buttons {
+     margin: 2%;
+   }
+
+   button {
+     display: inline;
+     align-items: center;
+     padding: 8px;
+     color: #792CDE;
+     background-color: #090909;
+   }
+
+   .buttons :hover {
+     background-color: white;
+   }
+
+   @media (max-width: 768px) {
+     .mi-contacto {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 0%;
+     }
+
+     label {
+       font-size: medium;
+     }
+
+     textarea {
+       height: 90%;
+       width: 90%;
+     }
+
+     .mi-contacto div {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+     }
+   }
+ }

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
 
+//---general---/
+@import "_general";
 //---nav--//
 @import "navegacion";
 //--main inicio//
@@ -14,16 +16,3 @@
 @import "main-contacto";
 //---Main Nosotros---//
 @import "main-nosotros";
-
-*{
-  margin: 0 auto;
-  padding: 0 auto;
-  list-style: none;
-  box-sizing: border-box;
-  user-select: none;
-}
-
-a:active a:link, a:visited{
-    text-decoration: none;
-    transition: .5s;
-  }
