@@ -16,13 +16,13 @@
   }
 
   div h1 {
-    margin: 20px;
+    margin: 15px;
     font-size: 60px;
     font-family: fantasy;
   }
 
   p {
-    margin: 25px;
+    margin: 10px;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: xx-large;
@@ -30,6 +30,11 @@
 }
 
 @media (max-width: 768px) {
+  .main-nosotros div p {
+    font-size: medium;
+    margin: 0;
+  }
+
   iframe {
     width: 450px;
     height: 450px;
@@ -43,6 +48,7 @@
 
   .main-nosotros div p {
     font-size: medium;
+    margin: 0;
   }
 
   iframe {

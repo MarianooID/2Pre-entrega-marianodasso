@@ -8,10 +8,10 @@
 
   .type-white {
     color: #ffffff;
-    margin: 20px;
+    margin: 0;
     width: 80%;
     height: 80%;
-    font-size: large;
+    font-size: medium;
     font-style: inherit;
     font-family: cursive;
   }
@@ -19,7 +19,7 @@
   .redes {
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 0;
   }
 
   i {
@@ -35,7 +35,7 @@
 
 @media (max-width: 768px) {
   .bg-footer .type-white {
-    font-size: medium;
+    font-size: small;
     align-items: center;
     text-align: center;
     margin: 0;
@@ -46,8 +46,7 @@
     margin: 0;
     padding: 0;
     width: 180px;
-    height: 180px;
-    flex-direction: row;
+    justify-content: center;
   }
 
   .bg-footer i {
